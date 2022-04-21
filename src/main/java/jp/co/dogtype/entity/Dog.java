@@ -11,6 +11,14 @@ public class Dog {
 	// 特徴
 	private String characteristic;
 
+	/**
+	 * コンストラクタ（初期化メソッド）
+	 * 
+	 * @param titleNo
+	 * @param breed
+	 * @param country
+	 * @param characteristic
+	 */
 	public Dog(int titleNo, String breed, String country, String characteristic) {
 	}
 
