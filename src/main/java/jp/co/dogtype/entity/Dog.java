@@ -20,6 +20,11 @@ public class Dog {
 	 * @param characteristic
 	 */
 	public Dog(int titleNo, String breed, String country, String characteristic) {
+		this.titleNo = titleNo;
+		this.breed = breed;
+		this.country = country;
+		this.characteristic = characteristic;
+
 	}
 
 	public int getTitleNo() {

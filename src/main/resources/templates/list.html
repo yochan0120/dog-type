@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja">
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -23,23 +23,11 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<th scope="row">1</th>
-					<td>チワワ</td>
-					<td>メキシコ</td>
-					<td>世界一小さい</td>
-				</tr>
-				<tr>
-					<th scope="row">2</th>
-					<td>トイプードル</td>
-					<td>フランス</td>
-					<td>日本で一番人気がある</td>
-				</tr>
-				<tr>
-					<th scope="row">3</th>
-					<td>ダックスフンド</td>
-					<td>ドイツ</td>
-					<td>胴が長い</td>
+				<tr th:each="dog : ${dogs}">
+					<th th:text="${dog.titleNo}" scope="row"></th>
+					<td th:text="${dog.breed}"></td>
+					<td th:text="${dog.country}"></td>
+					<td th:text="${dog.characteristic}"></td>
 				</tr>
 			</tbody>
 		</table>
