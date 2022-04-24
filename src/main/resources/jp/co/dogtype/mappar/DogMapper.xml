@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <!-- Dogテーブルから全件データを取る -->
+  <!-- mapper namespace="インターフェースの名前＋パッケージ名"-->
+<mapper namespace="jp.co.dogtype.mapper.DogMapper"> 
+
+	<!-- id=インターフェースで定義したメソッド名-->
+	<!-- resultType=パッケージ名-->	
+  <select id="selectAll" resultType="jp.co.dogtype.entity.Dog"> 
+    select * from dog
+  </select>
+</mapper>
